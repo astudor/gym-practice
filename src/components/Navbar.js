@@ -6,18 +6,11 @@ import Logo from "../assets/images/Logo.png";
 
 const Navbar = () => {
   return (
-    <Stack
-      direction="row"
-      justifyContent="space-around"
-      xs={{
-        gap: { xs: "40px", sm: "122px" },
-        mt: { xs: "20px", sm: "32px" }
-      }}
-    >
+    <Stack direction="row" justifyContent="space-around" sx={{ gap: { sm: "123px", xs: "40px" }, mt: { sm: "32px", xs: "20px" }, justifyContent: "none" }} px="20px">
       <Link to="/">
         <img src={Logo} alt="Logo" style={{ width: "48px", height: "48px", margin: "0 20px" }} />
       </Link>
-      <Stack direction="row" gap="40px" fontSize="24px" alignItems="flex-end">
+      <Stack direction="row" gap="40px" fontFamily="Alegreya" fontSize="24px" alignItems="flex-end">
         <Link to="/" style={{ textDecoration: "none", color: " #3a1212", borderBottom: "1px solid #ff2625" }}>
           Home
         </Link>
